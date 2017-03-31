@@ -1,0 +1,15 @@
+{
+  "name": "expedia",
+  "version": "1.0.0",
+  "description": "expedia task",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "mohammad masa'id",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "morgan": "^1.8.1"
+  }
+}
