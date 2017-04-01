@@ -1,5 +1,5 @@
 {
-    "name": "expedia",
+  "name": "expedia",
   "version": "1.0.0",
   "description": "expedia task",
   "main": "server.js",
@@ -22,6 +22,7 @@
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "font-awesome": "^4.7.0",
+    "morgan": "^1.8.1",
     "request": "^2.81.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.7.6"
