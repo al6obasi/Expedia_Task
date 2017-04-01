@@ -1,0 +1,35 @@
+      <div class="container">
+        <h1 class="jumbotron-heading"> Expedia offers </h1>
+      <div class="row center">
+       <a href="#" class="btn btn-primary"> Choose city </a>
+       <select col-md-2 class="btn btn-secondary" [(ngModel)]="city">
+        <option  *ngFor="let city of cities "
+        >{{city}}</option>
+      </select>
+    </div>
+    <br>
+</div>
+
+
+   <section class="jumbotron text-center">
+
+  <div class="container" *ngFor="let offer of Offers | citiesPipe : city">
+  <span>
+    <img class="card-img-top" src="{{offer.hotelInfo.hotelImageUrl}}" alt="Card image cap">
+  </span>
+    <div class="card-block">
+      <h3  class="card-title"> {{ offer.destination.city }}</h3 >
+      <span class="card-text">Description : {{offer.hotelInfo.description}}</span>
+    </div>
+    <p class="list-group-item"> City : {{offer.destination.city}} </p>
+    <p class="list-group-item"> Hotel Name: {{offer.hotelInfo.hotelName}}</p>
+    <p class="list-group-item">Start Date : {{offer.hotelInfo.travelStartDate}} </p>
+    <p class="list-group-item">End Date : {{offer.hotelInfo.travelEndDate}} </p>
+    <p class="list-group-item">Length Of Stay : {{offer.offerDateRange.lengthOfStay}} </p>
+    <p id="price" class="list-group-item"> $ {{offer.hotelPricingInfo.totalPriceValue}}</p>
+     <a href="{{offer.hotelUrls.hotelInfositeUrl}}" class="btn btn-primary">More info</a>
+    <div class="card-block">
+    </div>
+    <br>
+</div>
+
