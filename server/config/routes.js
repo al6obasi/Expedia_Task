@@ -3,5 +3,5 @@ module.exports = function (app, express) {
 
  /*								Api Hotel route
  / ============================================================================== */
-		app.get('/',ApiHotel.getData);
+		app.get('/api/hotelData',ApiHotel.getData);
 	};
